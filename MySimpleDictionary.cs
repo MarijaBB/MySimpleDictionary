@@ -59,6 +59,7 @@
 				Resize();
 			}
 		}
+		
 		// [.]
 		public TValue this[TKey key]
 		{

@@ -13,6 +13,15 @@ namespace MySimpleDictionary
             RunAllBenchmarks(SmallSize, "Small");
             RunAllBenchmarks(MediumSize, "Medium");
             RunAllBenchmarks(LargeSize, "Large");
+
+            /*
+             Here you can write your own tests:
+             var dict1 = new MySimpleDictionary<int, int>(); 
+             dict1.Add(4,5);
+             dict1.Count();
+             dict1.ContainsValue(5);
+             ...
+            */
         }
 
         private static void RunAllBenchmarks(int size, string sizeLabel)
@@ -282,7 +291,6 @@ namespace MySimpleDictionary
 
             return values;
         }
-
         private static void printResults(double myDictTime, double dictTime)
         {
             Console.WriteLine($"MySimpleDictionary: {myDictTime:F2} ms");
